@@ -111,11 +111,10 @@ class NeweggPriceTracker:
             
             time.sleep(check_interval)
 
+#Change the URL and target price to your desired product and price
 if __name__ == "__main__":
     url = "https://www.newegg.com/amd-ryzen-7-7800x3d-ryzen-7-7000-series-raphael-zen-4-socket-am5/p/N82E16819113793"
     target_price = 400.00  # Set your desired target price
     
     tracker = NeweggPriceTracker(url, target_price)
     tracker.track_price()
-
-############################################################################################
